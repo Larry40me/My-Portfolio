@@ -236,6 +236,9 @@ input{
 
 textarea{
     height: 20vh;
+    width: 40vw;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 input[type=submit]{
