@@ -239,6 +239,7 @@ textarea{
     width: 40vw;
     margin-right: auto;
     margin-left: auto;
+    margin-left: 10%;
 }
 
 input[type=submit]{
