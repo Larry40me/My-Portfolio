@@ -112,23 +112,6 @@ header .pc_menu a{
     background-color: rgb(29, 94, 206);
 }
 
-@media (max-width: 750px) {
-    .first_section{
-        margin-left: 10%;
-        width: 80vw;
-    }
-    .first_section .cta{
-        width: 30vw;
-        text-decoration: none;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: medium;
-        border: 2px solid white;
-    }
-    .introduction img{
-        display: none;
-    }
-}
-
 .about_section h1{
     text-align: center;
     text-transform: uppercase;
@@ -222,24 +205,26 @@ header .pc_menu a{
 }
 
 .contact .forms{
-    width: 50vw;
-    margin-left: 25%;
-    background-color: white;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.forms .other-form {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 input{
-    width: 40vw;
+    width: 35vw;
     height: 7vh;
-    margin-left: 10%;
-    margin-top: 2%;
 }
 
 textarea{
     height: 20vh;
-    width: 40vw;
-    margin-right: auto;
-    margin-left: auto;
-    margin-left: 10%;
+    width: 35vw;
 }
 
 input[type=submit]{
@@ -253,14 +238,19 @@ input[type=submit]{
 
 footer{
     width: 100vw;
-    height: 55vh;
+    height: max-content;
+    padding: 10px;
     color: white;
     background-color: black;
 }
 
-.box{
-    width: 90vw;
-    margin-left: 5%;
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box a{
     color: white;
 }
 
@@ -274,7 +264,21 @@ footer{
     text-align: right;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
+    .first_section{
+        margin-left: 10%;
+        width: 80vw;
+    }
+    .first_section .cta{
+        width: 30vw;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: medium;
+        border: 2px solid white;
+    }
+    .introduction img{
+        display: none;
+    }
     .des2{
         width: 90vw;
         margin-left: 5%;
@@ -307,16 +311,16 @@ footer{
         margin-left: 5%;
     }
     .contact .forms {
-        width: 90vw;
-        margin-left: 4%;
+        flex-direction: column;
     }
     .contact .forms input {
         width: 80vw;
-        margin-left: 5%;
+    }
+    .contact .forms input[type=submit] {
+        width: 40vw;
     }
     .contact .forms textarea {
         width: 80vw;
-        margin-left: 5%;
     }
 }
 
